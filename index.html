@@ -593,7 +593,7 @@ $('fsBtn').addEventListener('click', ()=>{
 });
 
 // ─── EVENTS ───────────────────────────────────────────────────────────────────
-const debouncedSearch = debounce(()=>{ searchVal=searchInput.value; applyFilters(); }, 220);
+const debouncedSearch = debounce(()=>{ searchVal=searchInput.value; applyFilters(); }, 920);
 searchInput.addEventListener('input', debouncedSearch);
 catFilter.addEventListener('change', applyFilters);
 $('refreshBtn').addEventListener('click', ()=>{ clearTimeout(refreshTimer); fetchChannels(false).then(scheduleRefresh); });
